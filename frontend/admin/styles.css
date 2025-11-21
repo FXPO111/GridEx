@@ -1,0 +1,45 @@
+body {
+  background: #050816;
+  color: #e5e7eb;
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 16px;
+}
+
+.gx-title {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+.gx-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.gx-table th, .gx-table td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+button {
+  padding: 6px 10px;
+  margin-right: 6px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn-ok {
+  background: #10b981;
+  color: white;
+}
+
+.btn-send {
+  background: #6366f1;
+  color: white;
+}
+
+.btn-cancel {
+  background: #ef4444;
+  color: white;
+}

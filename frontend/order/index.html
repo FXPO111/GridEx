@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>GridEx — Заявка</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="gx-header">
+  <div class="gx-container gx-header-inner">
+    <div class="gx-logo">GridEx</div>
+  </div>
+</header>
+
+<main class="gx-container gx-main">
+
+  <h1 class="gx-title">Заявка <span id="order-id">—</span></h1>
+
+  <div class="gx-card">
+
+    <div class="gx-row">
+      <span>Сумма к оплате:</span>
+      <span id="rub-amount">—</span>
+    </div>
+
+    <div class="gx-row">
+      <span>Вы получите (USDT):</span>
+      <span id="usdt-amount">—</span>
+    </div>
+
+    <div class="gx-row">
+      <span>Курс:</span>
+      <span id="rate">—</span>
+    </div>
+
+    <div class="gx-row">
+      <span>Ваш кошелёк TRC20:</span>
+      <span id="wallet">—</span>
+    </div>
+
+    <hr>
+
+    <div class="gx-row">
+      <span>Карта для оплаты:</span>
+      <span id="card-number">{{CARD_NUMBER}}</span>
+    </div>
+
+    <div class="gx-row gx-row-accent">
+      <span>Срок фиксации курса:</span>
+      <span id="timer">—</span>
+    </div>
+
+    <div class="gx-status" id="status-text">Ожидает оплаты от клиента</div>
+
+    <div class="gx-actions">
+      <button id="btn-paid" class="gx-btn-primary">Я оплатил</button>
+    </div>
+
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

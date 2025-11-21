@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>GridEx — Покупка USDT TRC20 за RUB (карта РФ)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="gx-header">
+  <div class="gx-container gx-header-inner">
+    <div class="gx-logo">GridEx</div>
+  </div>
+</header>
+
+<main class="gx-container gx-main">
+
+  <h1 class="gx-title">
+    Покупка <span class="gx-accent">USDT TRC20</span> за <span class="gx-accent">RUB (карта РФ)</span>
+  </h1>
+
+  <p class="gx-subtitle">
+    Вы переводите RUB на карту РФ — получаете USDT TRC20 на свой кошелёк.
+    Курс фиксируется на время создания заявки.
+  </p>
+
+  <div class="gx-card">
+
+    <form id="exchange-form">
+
+      <!-- RUB -->
+      <div class="gx-field">
+        <label>Вы платите (RUB):</label>
+        <input id="rub-input" type="number" min="1000" placeholder="Введите сумму в рублях" required>
+        <div class="gx-hint">Минимальная сумма: 1000 RUB</div>
+      </div>
+
+      <!-- USDT -->
+      <div class="gx-field">
+        <label>Вы получаете (USDT TRC20):</label>
+        <input id="usdt-output" type="text" readonly placeholder="0.00">
+      </div>
+
+      <!-- WALLET -->
+      <div class="gx-field">
+        <label>Ваш кошелёк TRC20 (USDT):</label>
+        <input id="wallet-input" type="text" placeholder="T..." required>
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="gx-summary">
+        <div class="gx-row">
+          <span>Курс:</span>
+          <span id="rate-label">—</span>
+        </div>
+        <div class="gx-row">
+          <span>Комиссия сервиса:</span>
+          <span id="fee-label">—</span>
+        </div>
+        <div class="gx-row gx-row-accent">
+          <span>Курс фиксирован до:</span>
+          <span id="lock-timer">Не зафиксирован</span>
+        </div>
+      </div>
+
+      <!-- ACTIONS -->
+      <div class="gx-actions">
+        <button type="button" id="lock-btn" class="gx-btn-secondary">Зафиксировать курс</button>
+        <button type="submit" class="gx-btn-primary">Создать заявку</button>
+      </div>
+
+      <div id="form-status" class="gx-status"></div>
+
+    </form>
+
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
